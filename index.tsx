@@ -1,5 +1,6 @@
 import { h, render, FunctionalComponent, Fragment } from 'preact';
 import { Button } from './components/button';
+import { Checkbox, Input, Radio } from './components/input';
 
 const App: FunctionalComponent = () => {
 
@@ -28,6 +29,45 @@ const App: FunctionalComponent = () => {
             <br />
             <br />
             <h2>Inputs</h2>
+            <label style="display: block; margin-bottom: 10px;">
+                <p>Text field</p>
+                <Input placeholder="A sample text field" />
+            </label>
+            <label style="display: block; margin-bottom: 10px;">
+                <p>Email field</p>
+                <Input placeholder="A sample email field" type="email" />
+            </label>
+            <label style="display: block; margin-bottom: 10px;">
+                <p>Number field</p>
+                <Input placeholder="A sample number field" type="number" />
+            </label>
+            <label style="display: block; margin-bottom: 10px;">
+                <p>Password field</p>
+                <Input placeholder="A sample password field" type="password" />
+            </label>
+            <label style="display: block; margin-bottom: 10px;">
+                <p>Telephone field</p>
+                <Input placeholder="A sample tel field" type="tel" />
+            </label>
+
+            <br />
+            <h4>Checkboxes</h4>
+            <Checkbox name="checkbox-1" label='Checkbox 1' style="margin-right: 15px;" />
+            <Checkbox name="checkbox-2" label='Checkbox 2' style="margin-right: 15px;" />
+            <Checkbox name="checkbox-3" label='Checkbox 3' style="margin-right: 15px;" />
+
+            <br />
+            <br />
+            <h4>Radios</h4>
+            <Radio name="radio" value="radio-1" label='Radio 1' style="margin-right: 15px;" />
+            <Radio name="radio" value="radio-2" label='Radio 2' style="margin-right: 15px;" />
+            <Radio name="radio" value="radio-3" label='Radio 3' style="margin-right: 15px;" />
+
+            {/*
+            date
+            color
+            file
+            range*/}
 
         </main>
     );

@@ -3,10 +3,10 @@
     --color-text-white: #e4e4e4;
     --color-text-subdued: #646464;
 
-    --color-primary: #32aace;
+    --color-primary: #44a6c4;
     --color-primary-hover: #51b3d1;
     --color-primary-active: #1c9ac0;
-    --color-primary-faded: #32aace70;
+    --color-primary-faded: #44a6c470;
     
     --color-secondary: #c077ca;
     --color-secondary-hover: #c189c8;
@@ -48,7 +48,15 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: var(--color-text-white);
     color: var(--color-text-black);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-text-black);
+        color: var(--color-text-white);
+    }
 }
 
 main {
@@ -61,7 +69,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
 hr {
     border: 0;
-    border-top: solid 1px #ccc;
+    border-top: solid 1px var(--color-text-subdued);
 }
