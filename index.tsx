@@ -1,5 +1,6 @@
 import { h, render, FunctionalComponent, Fragment } from 'preact';
 import { Button } from './components/button';
+import { Card } from './components/card';
 import { Checkbox, Input, Radio } from './components/input';
 
 const App: FunctionalComponent = () => {
@@ -63,11 +64,23 @@ const App: FunctionalComponent = () => {
             <Radio name="radio" value="radio-2" label='Radio 2' style="margin-right: 15px;" />
             <Radio name="radio" value="radio-3" label='Radio 3' style="margin-right: 15px;" />
 
-            {/*
-            date
-            color
-            file
-            range*/}
+            <br />
+            <br />
+            <h4>Date</h4>
+            <p>todo</p>
+            <br />
+            <h4>Color</h4>
+            <p>todo</p>
+            <br />
+            <h4>File</h4>
+            <p>todo</p>
+            <br />
+            <h4>Range</h4>
+            <p>todo</p>
+
+            <br />
+            <h2>Cards and Accordions</h2>
+            <Card>Example Card!</Card>
 
         </main>
     );
