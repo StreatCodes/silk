@@ -1,15 +1,17 @@
 {
   "name": "@streatcodes/silk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Preact component library",
-  "main": "index.js",
+  "files": [
+    "components"
+  ],
   "scripts": {
     "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --external:*.woff2 --serve=localhost:8080 --servedir=.",
     "prod": "esbuild index.tsx --bundle --outfile=dist/bundle.js --external:*.woff2 --minify"
   },
   "author": "Matthew Streatfield",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "esbuild": "^0.14.25",
     "preact": "^10.6.6"
   }
