@@ -4,7 +4,7 @@ import { Size, Variant } from './types';
 import './input.css';
 
 interface InputProps {
-    onChange?: () => void;
+    onChange?: (v: string | number) => void;
     value?: string | number;
     className?: string;
     style?: string;
@@ -17,7 +17,7 @@ interface InputProps {
 
 export const Input: FunctionalComponent<InputProps> = ({ onChange, value, size = 'md', className = '', style, type = 'text', error = false, placeholder, required }) => {
     return (
-        <input type={type} value={value} class={`input ${error ? 'error' : ''} ${size} ${className}`} style={style} placeholder={placeholder} onChange={onChange} required={required} />
+        <input type={type} value={value} class={`input ${error ? 'error' : ''} ${size} ${className}`} style={style} placeholder={placeholder} onChange={e => onChange?.(e.currentTarget.value)} required={required} />
     );
 };
 
