@@ -1,6 +1,6 @@
 {
   "name": "@streatcodes/silk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Preact component library",
   "files": [
     "components"
