@@ -1,0 +1,20 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    border: 2px solid var(--color-text-subdued);
+    border-bottom-color: var(--color-text-white);
+    border-radius: 50%;
+
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

@@ -2,6 +2,7 @@ import { h, render, FunctionalComponent, Fragment } from 'preact';
 import { Button } from './components/button';
 import { Card } from './components/card';
 import { Checkbox, Input, Radio } from './components/input';
+import { Spinner } from './components/loader';
 
 const App: FunctionalComponent = () => {
 
@@ -26,6 +27,12 @@ const App: FunctionalComponent = () => {
             <Button size="md" style="margin-right: 4px;">Medium (default)</Button>
             <Button size='sm' style="margin-right: 4px;">Small</Button>
             <Button size='xs' style="margin-right: 4px;">Extra Small</Button>
+
+            <br />
+            <br />
+            <h4>Loading</h4>
+            <Button loading >Loading</Button>
+
 
             <br />
             <br />
@@ -81,6 +88,13 @@ const App: FunctionalComponent = () => {
             <br />
             <h2>Cards and Accordions</h2>
             <Card>Example Card!</Card>
+
+            <br />
+            <h2>Icons</h2>
+
+            <br />
+            <h2>Spinners</h2>
+            <Spinner width={16} />
 
         </main>
     );
