@@ -7,7 +7,7 @@ interface Props {
     onChange?: () => void;
     className?: string;
     style?: string;
-    children: ComponentChildren;
+    children?: ComponentChildren;
 }
 
 export const Card: FunctionalComponent<Props> = ({ onChange, className = '', style, children }) => {

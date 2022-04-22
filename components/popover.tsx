@@ -7,7 +7,7 @@ import { Card } from './card';
 interface PopoverProps {
     className?: string;
     style?: string;
-    children: ComponentChildren;
+    children?: ComponentChildren;
     show: boolean;
     onHide: () => void
     anchor?: 'left' | 'right' | 'top' | 'bottom';
@@ -30,7 +30,7 @@ interface PopoverWrapProps {
     onChange?: () => void;
     className?: string;
     style?: string;
-    children: ComponentChildren;
+    children?: ComponentChildren;
 }
 
 export const PopoverWrap: FunctionalComponent<PopoverWrapProps> = ({ className = '', style, children }) => {
