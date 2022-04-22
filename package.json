@@ -6,8 +6,8 @@
     "components"
   ],
   "scripts": {
-    "dev": "esbuild index.tsx --bundle --outfile=dist/bundle.js --external:*.woff2 --serve=localhost:8080 --servedir=.",
-    "prod": "esbuild index.tsx --bundle --outfile=dist/bundle.js --external:*.woff2 --minify"
+    "dev": "esbuild kitchen-sink.tsx --bundle --outfile=dist/bundle.js --external:*.woff2 --serve=localhost:8080 --servedir=.",
+    "prod": "esbuild kitchen-sink.tsx --bundle --outfile=dist/bundle.js --external:*.woff2 --minify"
   },
   "author": "Matthew Streatfield",
   "license": "ISC",
