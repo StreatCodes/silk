@@ -1,43 +1,43 @@
 import { h, render, FunctionalComponent, Fragment } from 'preact';
 import { useState } from 'preact/hooks';
 import { Button } from './components/button';
-import { Card } from './components/card';
-import { Checkbox, Input, Radio } from './components/input';
-import { Spinner } from './components/loader';
-import { Popover, PopoverWrap } from './components/popover';
+// import { Card } from './components/card';
+// import { Checkbox, Input, Radio } from './components/input';
+// import { Spinner } from './components/loader';
+// import { Popover, PopoverWrap } from './components/popover';
 
 const App: FunctionalComponent = () => {
     const [showPopover, setShowPopover] = useState(true);
     const togglePopover = () => setShowPopover(v => !v)
 
     return (
-        <main>
-            <h1 style="font-size: 48px;">Silk</h1>
-            <hr />
+        <main className="mt-5 mx-auto mb-24 max-w-4xl text-dark">
+            <h1 className="text-5xl">Silk</h1>
+            <hr className="my-4 border-t-subdued" />
 
-            <h2>Buttons</h2>
+            <h2 className="text-2xl">Buttons</h2>
             <h4>Colors</h4>
-            <Button variant="primary" style="margin-right: 4px;">Primary (default)</Button>
-            <Button variant="secondary" style="margin-right: 4px;">Secondary</Button>
-            <Button variant="warning" style="margin-right: 4px;">Warning</Button>
-            <Button variant="critical" style="margin-right: 4px;">Critical</Button>
-            <Button variant="success" style="margin-right: 4px;">Success</Button>
+            <Button variant="primary">Primary (default)</Button>
+            <Button variant="secondary" className='ml-1'>Secondary</Button>
+            <Button variant="warning" className='ml-1'>Warning</Button>
+            <Button variant="critical" className='ml-1'>Critical</Button>
+            <Button variant="success" className='ml-1'>Success</Button>
             <br />
             <br />
 
             <h4>Sizes</h4>
-            <Button size="xl" style="margin-right: 4px;">Extra Large</Button>
-            <Button size="lg" style="margin-right: 4px;">Large</Button>
-            <Button size="md" style="margin-right: 4px;">Medium (default)</Button>
-            <Button size='sm' style="margin-right: 4px;">Small</Button>
-            <Button size='xs' style="margin-right: 4px;">Extra Small</Button>
+            <Button size="xl">Extra Large</Button>
+            <Button size="lg" className='ml-1'>Large</Button>
+            <Button size="md" className='ml-1'>Medium (default)</Button>
+            <Button size='sm' className='ml-1'>Small</Button>
+            <Button size='xs' className='ml-1'>Extra Small</Button>
 
             <br />
             <br />
             <h4>Loading</h4>
             <Button loading >Loading</Button>
 
-
+            {/* 
             <br />
             <br />
             <h2>Inputs</h2>
@@ -107,7 +107,7 @@ const App: FunctionalComponent = () => {
                 <Popover show={showPopover} onHide={togglePopover} anchor="right" align="end">
                     <div>hello</div>
                 </Popover>
-            </PopoverWrap>
+            </PopoverWrap> */}
         </main>
     );
 };

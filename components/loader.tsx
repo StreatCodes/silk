@@ -1,17 +1,14 @@
 import { h, FunctionalComponent, ComponentChildren } from 'preact';
 
-import './loader.css';
-
 interface Props {
     className?: string;
-    style?: string;
     width?: number;
 }
 
-export const Spinner: FunctionalComponent<Props> = ({ className = '', style, width = 12 }) => {
+export const Spinner: FunctionalComponent<Props> = ({ className = '', width = 12 }) => {
     const size = `width: ${width}px; height: ${width}px;`;
 
     return (
-        <div class={`spinner ${className}`} style={`${size} ${style}`} />
+        <div className={`border-2 border-subdued border-b-light rounded-full animate-spin ${className}`} style={size} />
     );
 };

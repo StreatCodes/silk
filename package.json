@@ -4,16 +4,21 @@
   "description": "A Preact component library",
   "files": [
     "components",
-    "index.tsx"
+    "index.tsx",
+    "silk-preset.js"
   ],
   "scripts": {
-    "dev": "esbuild kitchen-sink.tsx --bundle --outfile=dist/bundle.js --external:*.woff2 --serve=localhost:8080 --servedir=.",
+    "dev": "node build-dev.js",
     "prod": "esbuild kitchen-sink.tsx --bundle --outfile=dist/bundle.js --external:*.woff2 --minify"
   },
   "author": "Matthew Streatfield",
   "license": "ISC",
   "devDependencies": {
-    "esbuild": "^0.14.25",
-    "preact": "^10.6.6"
+    "esbuild": "^0.15.7",
+    "preact": "^10.10.6",
+    "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
   }
 }
