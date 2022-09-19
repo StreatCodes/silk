@@ -2,8 +2,9 @@ module.exports = {
     theme: {
         colors: {
             dark: '#272727',
-            light: '#e4e4e4',
+            light: '#f7f7f7',
             subdued: '#646464',
+            white: '#ffffff',
             primary: {
                 DEFAULT: '#44a6c4',
                 hover: '#51b3d1',

@@ -5,3 +5,5 @@ export type Variant =
   | "warning"
   | "critical"
   | "success";
+export type Direction = "left" | "right" | "top" | "bottom";
+export type Alignment = "start" | "middle" | "end";

@@ -1,18 +1,23 @@
 import { h, FunctionalComponent, ComponentChildren } from 'preact';
-import { Size, Variant } from './types';
-
-import './card.css';
+import { Size } from './types';
 
 interface Props {
-    onChange?: () => void;
     className?: string;
-    style?: string;
     children?: ComponentChildren;
+    size?: Size,
 }
 
-export const Card: FunctionalComponent<Props> = ({ onChange, className = '', style, children }) => {
+const sizes: Record<Size, string> = {
+    xs: 'p-1',
+    sm: 'p-2',
+    md: 'p-4',
+    lg: 'p-6',
+    xl: 'p-8'
+}
+
+export const Card: FunctionalComponent<Props> = ({ className = '', children, size = 'md' }) => {
     return (
-        <div class={`card ${className}`} style={style}>
+        <div class={`shadow rounded bg-white ${sizes[size]} ${className}`}>
             {children}
         </div>
     );
