@@ -37,7 +37,7 @@ module.exports = {
             },
         },
         fontFamily: {
-            sans: ['Quicksand', 'sans-serif'],
+            sans: ['Open Sans', 'sans-serif'],
         },
     },
 }

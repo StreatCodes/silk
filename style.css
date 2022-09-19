@@ -3,23 +3,19 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Quicksand';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
+    font-stretch: 100%;
     font-display: swap;
-    src: url(/assets/quicksand-regular.woff2) format('woff2');
+    src: url(/assets/open-sans.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: 'Quicksand';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
+    font-stretch: 100%;
     font-display: swap;
-    src: url(/assets/quicksand-bold.woff2) format('woff2');
-}
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--color-text-white);
-    color: var(--color-text-black);
+    src: url(/assets/open-sans.woff2) format('woff2');
 }
