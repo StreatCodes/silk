@@ -1,6 +1,6 @@
 {
   "name": "@streatcodes/silk",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A Preact component library",
   "files": [
     "components",
@@ -17,8 +17,5 @@
     "esbuild": "^0.15.7",
     "preact": "^10.10.6",
     "tailwindcss": "^3.1.8"
-  },
-  "dependencies": {
-    "classnames": "^2.3.1"
   }
 }

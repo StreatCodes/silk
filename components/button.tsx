@@ -1,6 +1,5 @@
 import { h, FunctionalComponent, ComponentChildren } from 'preact';
 import { Size, Variant } from './types';
-import classNames from 'classnames';
 import { Spinner } from './loader';
 
 interface Props {
@@ -29,22 +28,9 @@ const variants: Record<Variant, string> = {
 }
 
 export const Button: FunctionalComponent<Props> = ({ onClick, children, size = 'md', variant = 'primary', className = '', loading }) => {
-    const classes = classNames([
-        'text-light',
-        'relative',
-        'items-center',
-        'inline-flex',
-        'outline-offset-1',
-        'shadow',
-        'rounded',
-        'border-0',
-        'focus:outline',
-        'outline-primary',
-        'outline-2',
-        variants[variant],
-        sizes[size],
-        className
-    ]);
+    const classes = `text-light relative items-center inline-flex
+    outline-offset-1 shadow rounded border-0 focus:outline outline-primary
+    outline-2 ${variants[variant]} ${sizes[size]} ${className}`
 
     return (
         <button class={classes} onClick={onClick}>
